@@ -811,24 +811,11 @@ require('lazy').setup({
   -- },
 
   {
-    'catppuccin/nvim',
-    name = 'catppuccin',
+    'shaunsingh/nord.nvim',
+    lazy = false,
     priority = 1000,
     config = function()
-      require('catppuccin').setup {
-        flavour = 'mocha', -- latte, frappe, macchiato, mocha
-        integrations = {
-          cmp = true,
-          gitsigns = true,
-          nvimtree = true,
-          treesitter = true,
-          telescope = true,
-          native_lsp = {
-            enabled = true,
-          },
-        },
-      }
-      vim.cmd.colorscheme 'catppuccin-mocha'
+      vim.cmd.colorscheme 'nord'
     end,
   },
 
